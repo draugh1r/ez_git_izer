@@ -51,7 +51,7 @@ def git_init():
 def git_update():
     os.system("git status")
     print("Run git push ? ")
-    if input() == "Yes" or input() == "YES" or input=="si" or input=="SI":
+    if input() == "yes" or input() == "Yes" or input() == "YES" or input=="si" or input=="SI":
         os.system("git add .")
         os.system('git commit -m "update"')
         os.system("git push origin main")
@@ -61,7 +61,7 @@ def git_update():
 def git_pull():
     os.system("git status")
     print("Run git pull ? ")
-    if input() == "Yes" or input() == "YES" or input=="si" or input=="SI":
+    if input() == "yes" or input() == "Yes" or input() == "YES" or input=="si" or input=="SI":
         os.system("git pull origin main")
     else:
         print("Exiting...")
